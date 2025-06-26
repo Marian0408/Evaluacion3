@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+#<<<<<<< HEAD
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from models import Base
@@ -16,10 +16,10 @@ def get_db():
     try:
         yield db
     finally:
-=======
-from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker
-from models import Base
+#=======
+            from sqlalchemy import create_engine
+            from sqlalchemy.orm import sessionmaker
+            from models import Base
 
 DATABASE_URL = "sqlite:///biblioteca.db"
 
@@ -34,5 +34,5 @@ def get_db():
     try:
         yield db
     finally:
->>>>>>> 223ecc28ee676c2d7eec23a6ed56a088e7526074
+#>>>>>>> 223ecc28ee676c2d7eec23a6ed56a088e7526074
         db.close()

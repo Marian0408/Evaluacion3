@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+#<<<<<<< HEAD
 from sqlalchemy.orm import Session
 from database import SessionLocal
 from models import Autor, Libro, Genero
@@ -60,7 +60,7 @@ class BibliotecaController:
             self.db.delete(libro)
             self.db.commit()
             return True
-=======
+#=======
 from sqlalchemy.orm import Session
 from database import SessionLocal
 from models import Autor, Libro, Genero
@@ -122,5 +122,5 @@ class BibliotecaController:
             self.db.delete(libro)
             self.db.commit()
             return True
->>>>>>> 223ecc28ee676c2d7eec23a6ed56a088e7526074
+#>>>>>>> 223ecc28ee676c2d7eec23a6ed56a088e7526074
         return False

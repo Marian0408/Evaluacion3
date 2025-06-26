@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+#<<<<<<< HEAD
 from sqlalchemy import Column, Integer, String, ForeignKey, Table
 from sqlalchemy.orm import declarative_base, relationship
 
@@ -28,7 +28,7 @@ class Libro(Base):
     titulo = Column(String(200), nullable=False)
     autor_id = Column(Integer, ForeignKey('autores.id'))
     autor = relationship("Autor", back_populates="libros")
-=======
+#=======
 from sqlalchemy import Column, Integer, String, ForeignKey, Table
 from sqlalchemy.orm import declarative_base, relationship
 
@@ -58,5 +58,5 @@ class Libro(Base):
     titulo = Column(String(200), nullable=False)
     autor_id = Column(Integer, ForeignKey('autores.id'))
     autor = relationship("Autor", back_populates="libros")
->>>>>>> 223ecc28ee676c2d7eec23a6ed56a088e7526074
+#>>>>>>> 223ecc28ee676c2d7eec23a6ed56a088e7526074
     generos = relationship("Genero", secondary=libro_genero, back_populates="libros")
